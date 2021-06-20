@@ -1,0 +1,239 @@
+<html>
+<head>
+<script language ="JavaScript">
+/* div format:
+<div id = "1" style="position:absolute; left: 500; top:200; visibility: hidden">
+<img id = "smile" src = "images/20.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20">
+<h3>
+Hello
+
+</h3>
+</div>
+<br/>
+<input id="b1" type="button" value= "Absolutely!" onClick="next()"/>
+</div> */
+var count = 1
+function next()
+{
+	document.getElementById(count).style.visibility = "hidden";
+	count = count + 1;
+	document.getElementById(count).style.visibility = "visible";
+
+}
+
+function check()
+{
+
+	var uinput = document.getElementById("t1").value;
+	if(uinput == "215397")
+	{
+		next();
+	}
+	else
+	{
+		alert("Incorrect.");
+	}
+
+}
+
+function checkTwo()
+{
+	var uinput2 = document.getElementById("t2").value;
+	if(uinput2 == "taste the rainbow!")
+	{
+		next();
+	}
+	else if(uinput2 == "Taste the rainbow!")
+	{
+		next();
+	}
+	else
+	{
+		alert("Hmm, that doesn't look right to me. Give it another try.");
+	}
+
+}
+
+</script>
+</head>
+<body background = "">
+
+<div id = "1" style="position:absolute; left: 500; top:200; width: 500;visibility: visible">
+<img id = "smile" src = "images/17.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+Hey there, pal! Boy, am I glad to see you. I lost my favorite book, and I could really use someone's help in getting it back. I know it's somewhere in this house, but I'm stuck in here! Think you'd be willing to lend a hand?
+</h3>
+</div>
+<br/><br/><center>
+<input id="b1" type="button" value= "Absolutely!" onClick="next()"/>
+</center>
+</div>
+
+<div id = "2" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/15.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+I KNOW I've got it around here somewhere... I just don't know where it could be! I did find this safe, although I don't have any way to unlock it. I'm going to look around to see if there's anything to help us.
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "Great!" onClick="next()"/>
+</center>
+</div>
+
+
+<div id = "3" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/19.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+I found something! It's over in the main hallway closet. Looks like some sort of puzzle. Why don't you bring it here so that we can try to figure it out?
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "I got it." onClick="next()"/>
+</center>
+</div>
+
+
+<div id = "4" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/12.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+A rubik's cube! That's great, cause  you can do those, right? Well, go on. I'll wait here. I'm rubbish at these puzzle things, you know. And if you need help, I'm sure you can just ask.
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "I solved it!" onClick="next()"/>
+</center>
+</div>
+
+<div id = "5" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/20.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+It's just numbers? Well, we DO need six numbers to open the safe. But we don't know what order they go in! I'm going to take another look around to see if I can find something helpful. Wait here for me.
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "You got it." onClick="next()"/>
+</center>
+</div>
+
+<div id = "6" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/14.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+I found something! It's a painting with colorful squares, in the order RED, YELLOW, BLUE, WHITE, PINK, GREEN. That sounds familiar somehow, but I just can't place it.
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "I know what it is!" onClick="next()"/>
+</center>
+</div>
+
+<div id = "7" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/8.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+It sounds like you've figured out a way! Here's the lock for you to give it a try. 
+<br/><br/>
+Enter the passcode:
+</h3>
+</div>
+<br/><br/><center>
+<input id="t1" type="textbox"/> <br/><br/>
+<input id="b3" type="button" value= "Enter" onClick="check()"/>
+</center>
+</div>
+
+<div id = "8" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/18.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+You got it! Oh man, let me see what's inside!
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "Please!" onClick="next()"/>
+</center>
+</div>
+
+<div id = "9" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/12.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+It's a piece of paper! It says "I've left a treasure and another clue in the laundry room." Well, what are you waiting for? Go, hurry! But come back when you've got it.
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "I got it!" onClick="next()"/>
+</center>
+</div>
+
+<div id = "10" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/5.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+Excellent! Some sort of word puzzle, I take it. Oh! It looks like you have to unscramble the words. Here, type the answer in here when you've got it.
+
+</h3>
+</div>
+<br/><br/><center>
+<input id="t2" type="textbox"/> <br/><br/>
+<input id="b4" type="button" value= "Enter" onClick="checkTwo()"/>
+</center>
+</div>
+
+<div id = "11" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/17.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+"Taste the Rainbow!" It must mean Skittles, right? I think I smell some right now... in your brother's bedroom! Well, obviously I can't go get them (otherwise I'd be eating them right now), so go get 'em.
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "I have obtained the Skittles!" onClick="next()"/>
+</center>
+</div>
+
+<div id = "12" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/5.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+They come with a riddle?! Wow, that's a whopper. I don't have even an idea of what the answer might be... but do you? And when you figure it out, I've got a good feeling that this is the one that leads to my book!
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "I got the book!" onClick="next()"/>
+</center>
+</div>
+
+<div id = "13" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<img id = "smile" src = "images/2.png" width ="270"/>
+<div style = "position:absolute; left:300; top: 20; overflow:scroll">
+<h3>
+You found it! What a pal. I can't thank you enough, really. But... you know what? You've been so great, I think you ought to keep it. Really, I don't even have an oven anyway. Just promise you'll bake me something soon. And Happy Birthday, buddy!
+</h3>
+</div>
+<br/><br/><center>
+<input id="b2" type="button" value= "Thank you!" onClick="next()"/>
+</center>
+</div>
+
+<div id = "14" style="position:absolute; left: 500; top:200; width: 500;visibility: hidden">
+<h3>
+Now for all of you intrigued spectators that have tuned in to this spectacular treasure hunt, now it is your turn to look away. Thanks very much.
+<br/>
+J, <br/><br/> Happy Birthday! I simply can't believe you're 13. That's a little too much for me, honestly. But... happy birthday anyway, I guess. ^_^. Either way, I hope you enjoyed this fun little game! It would've been too easy to just GIVE you a present--no way. I had to make it difficult for you, of course. <br/><br/> I want you to know that as you step out of your world and start to figure out who you are, you've always got a friend along the way. I may get angry and snippy sometimes, but that never means I won't be there for you. <br/><br/> I hope you've had an incredible birthday! You are an incredible guy, seriously. <br/><br/> Love,<br/> Shayla. <br/><br/> P.S. You want to know why I couldn't play Minecraft Dungeons with you this last week? I was working my BUTT off trying to finish this in time! And I couldn't even tell you!
+</h3>
+<br/><br/><center>
+<h2>
+The end.
+</h2>
+</center>
+</div>
+
+</body>
+</html>
